@@ -14,9 +14,9 @@ from models.ResNet import *
 
 def run():
     # Parameters
-    num_epochs = 3
+    num_epochs = 10
     output_period = 4
-    batch_size = 4
+    batch_size = 22
 
     # setup the device for running
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -25,7 +25,6 @@ def run():
 
     train_loader= dataset.get_train_loaders(batch_size)
     num_train_batches = len(train_loader)
-
     criterion = nn.CrossEntropyLoss().to(device)
     # TODO: optimizer is currently unoptimized
     # there's a lot of room for improvement/different optimizers
