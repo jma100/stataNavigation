@@ -35,7 +35,7 @@ def index2file(idx):
 start = time.time()
 
 # load features:
-test_img = cv.imread('data/val/16/01.jpg',0)
+test_img = cv.imread('data/val/13/01.jpg',0)
 test_kp, test_des = sift.detectAndCompute(test_img,None)
 features = np.load("features.npy")
 sum_list = []
