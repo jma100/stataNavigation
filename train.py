@@ -91,6 +91,8 @@ def run():
         epoch += 1
 
 
-print('Starting training')
-run()
-print('Training terminated')
+
+if __name__ == '__main__':
+    print('Starting training')
+    run()
+    print('Training terminated')
